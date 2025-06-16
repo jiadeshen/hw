@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript作業</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+input[type="number"] {
+    color: #000;
+}
+</style>
+</head>
+
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo"><strong>首頁</strong></a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+         <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html">關於我</a></li>
+                <li><a href="feel.html">心得</a></li>
+                <li><a href="xx.html">乘法表</a></li>
+                <li><a href="game.html">遊戲</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div id="main" class="alt">
+            <section>
+                <div class="inner">
+                    <h1>N × N 乘法表</h1>
+                    <div style="text-align:center; margin-top:20px;">
+                        <label for="numberInput">輸入一個數值:</label>
+                        <input type="number" id="numberInput" placeholder="輸入一個數值" min="1" />
+                        <input type="button" value="OK" title="OK" onclick="myFunction()" />
+                    </div>
+                    <div id="myId"></div>
+                </div>
+            </section>
+        </div>
+
+        
+
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        function myFunction() {
+            var n = document.getElementById('numberInput').value;
+            var str = "<table>";
+            for (let i = 1; i <= n; i++) {
+                str += "<tr>";
+                for (let j = 1; j <= n; j++) {
+                    str += `<td>${i} × ${j} = ${i * j}</td>`;
+                }
+                str += "</tr>";
+            }
+            str += "</table>";
+            document.getElementById("myId").innerHTML = str;
+        }
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

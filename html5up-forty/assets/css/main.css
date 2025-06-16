@@ -3953,3 +3953,25 @@ input, select, textarea {
 		.spotlights > section:nth-child(2n) {
     flex-direction: row-reverse;
 }
+.tube {
+    display: inline-block;
+    width: 40px;
+    height: 160px;
+    border: 2px solid #222;
+    border-radius: 12px 12px 8px 8px;
+    margin: 0 10px;
+    background: #eee;
+    vertical-align: bottom;
+    position: relative;
+    cursor: pointer;
+}
+.tube.selected {
+    border: 2px solid #f78f1e;
+    box-shadow: 0 0 8px #f78f1e;
+}
+.block {
+    width: 100%;
+    height: 22%;
+    border-radius: 6px;
+    margin-bottom: 2px;
+}
