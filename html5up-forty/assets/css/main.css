@@ -3950,3 +3950,6 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+		.spotlights > section:nth-child(2n) {
+    flex-direction: row-reverse;
+}
