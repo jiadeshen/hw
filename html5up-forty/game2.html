@@ -1,49 +1,74 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Water Puzzle Game</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/js/waterpuzzle2.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
+
+    <!-- Wrapper -->
     <div id="wrapper">
-        <header id="header">
-            <a href="index.html" class="logo"><strong>首頁</strong></a>
+
+        <!-- Header -->
+        <header id="header" class="alt">
+            <a href="index.html" class="logo"><strong>首頁</strong> </a>
             <nav>
                 <a href="#menu">Menu</a>
             </nav>
         </header>
+
+        <!-- Menu -->
         <nav id="menu">
             <ul class="links">
                 <li><a href="index.html">首頁</a></li>
                 <li><a href="about.html">關於我</a></li>
-                <li><a href="research.html">研究</a></li>
-                <li><a href="homework.html">作業</a></li>
-                <li><a href="game.html">遊戲</a></li>
+                <li><a href="feel.html">心得</a></li>
+                <li><a href="xx.html">乘法表</a></li>
+                <li><a href="game2.html">遊戲</a></li>
             </ul>
         </nav>
-<div class="inner">
-    <h1>Water Puzzle Game</h1>
-    <label for="level-select" style="font-weight:bold;">選擇難度：</label>
-    <select id="level-select">
-        <option value="1">1級</option>
-        <option value="2">2級</option>
-        <option value="3">3級</option>
-        <option value="4">4級</option>
-        <option value="5">5級</option>
-        <option value="6">6級</option>
-        <option value="7">7級</option>
-        <option value="8">8級</option>
-        <option value="9">9級</option>
-        <option value="10">10級</option>
-    </select>
-    <button id="start-btn" class="button primary">開始遊戲</button>
-    <div id="game-container" style="margin-top:30px;"></div>
-    <div id="msg" style="margin-top:20px;font-weight:bold;"></div>
-</div>
+
+        <!-- Main -->
+        <div id="main">
+            <section>
+                <div class="inner" style="text-align:center;">
+                    <h1>Water Puzzle Game</h1>
+                    <label for="level-select" style="font-weight:bold;">選擇難度：</label>
+                    <select id="level-select">
+                        <option value="1">1級</option>
+                        <option value="2">2級</option>
+                        <option value="3">3級</option>
+                        <option value="4">4級</option>
+                        <option value="5">5級</option>
+                        <option value="6">6級</option>
+                        <option value="7">7級</option>
+                        <option value="8">8級</option>
+                        <option value="9">9級</option>
+                        <option value="10">10級</option>
+                    </select>
+                    <br><br>
+                    <div style="text-align:center;">
+                        <button id="start-btn" class="button primary" style="margin-bottom: 20px;">開始遊戲</button>
+                    </div>
+                    <div id="game-container"></div>
+                    <div id="msg"></div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/waterpuzzle2.js"></script>
 </body>
 </html>

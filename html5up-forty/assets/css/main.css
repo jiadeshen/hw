@@ -2723,6 +2723,7 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		border-top: 0 !important;
+		
 	}
 
 		.tiles + * {
@@ -3964,7 +3965,12 @@ input, select, textarea {
     vertical-align: bottom;
     position: relative;
     cursor: pointer;
+    display: inline-flex;
+    flex-direction: column-reverse; /* 讓水塊從底部開始堆疊 */
+    justify-content: flex-start;
+    /* ...其他樣式... */
 }
+
 .tube.selected {
     border: 2px solid #f78f1e;
     box-shadow: 0 0 8px #f78f1e;
@@ -3974,4 +3980,22 @@ input, select, textarea {
     height: 22%;
     border-radius: 6px;
     margin-bottom: 2px;
+}
+#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 16px;
+    margin: 30px auto 0 auto;
+}
+#msg {
+    margin-top: 24px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #f78f1e;
+    text-align: center;
+}
+#start-btn {
+    display: inline-block;
+    margin-bottom: 20px;
 }
