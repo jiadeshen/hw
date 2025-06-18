@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript作業</title>
+    <!-- 主樣式 -->
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-input[type="number"] {
-    color: #000;
-}
-</style>
+    /* 數字輸入框字體顏色設為黑色 */
+    input[type="number"] {
+        color: #000;
+    }
+    </style>
 </head>
 
 <body class="is-preload">
-    <!-- Wrapper -->
+    <!-- 外層包裝 -->
     <div id="wrapper">
 
-        <!-- Header -->
+        <!-- 頁首（Logo與選單） -->
         <header id="header">
             <a href="index.html" class="logo"><strong>首頁</strong></a>
             <nav>
@@ -25,8 +27,8 @@ input[type="number"] {
             </nav>
         </header>
 
-        <!-- Menu -->
-         <nav id="menu">
+        <!-- 側邊選單 -->
+        <nav id="menu">
             <ul class="links">
                 <li><a href="index.html">首頁</a></li>
                 <li><a href="about.html">關於我</a></li>
@@ -36,48 +38,45 @@ input[type="number"] {
             </ul>
         </nav>
 
-        <!-- Main Content -->
+        <!-- 主要內容區塊 -->
         <div id="main" class="alt">
             <section>
                 <div class="inner">
                     <h1>N × N 乘法表</h1>
+                    <!-- 輸入區與按鈕 -->
                     <div style="text-align:center; margin-top:20px;">
                         <label for="numberInput">輸入一個數值:</label>
                         <input type="number" id="numberInput" placeholder="輸入一個數值" min="1" />
                         <input type="button" value="OK" title="OK" onclick="myFunction()" />
                     </div>
+                    <!-- 乘法表顯示區 -->
                     <div id="myId"></div>
                 </div>
             </section>
         </div>
 
-        
-
     </div>
 
-    <!-- Scripts -->
+    <!-- 產生乘法表的JS函式 -->
     <script>
         function myFunction() {
-            var n = document.getElementById('numberInput').value;
+            var n = document.getElementById('numberInput').value; // 取得輸入值
             var str = "<table>";
-            for (let i = 1; i <= n; i++) {
+            for (let i = 1; i <= n; i++) { // 外層迴圈：列
                 str += "<tr>";
-                for (let j = 1; j <= n; j++) {
+                for (let j = 1; j <= n; j++) { // 內層迴圈：欄
                     str += `<td>${i} × ${j} = ${i * j}</td>`;
                 }
                 str += "</tr>";
             }
             str += "</table>";
-            document.getElementById("myId").innerHTML = str;
+            document.getElementById("myId").innerHTML = str; // 顯示在網頁上
         }
     </script>
+    <!-- 主題功能用 JavaScript -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
-
-</html>
+    <script src

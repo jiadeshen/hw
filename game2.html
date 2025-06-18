@@ -4,15 +4,17 @@
     <title>Water Puzzle Game</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- 主樣式 -->
     <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- 無JS時的樣式 -->
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
 
-    <!-- Wrapper -->
+    <!-- 外層包裝 -->
     <div id="wrapper">
 
-        <!-- Header -->
+        <!-- 頁首（Logo與選單） -->
         <header id="header" class="alt">
             <a href="index.html" class="logo"><strong>首頁</strong> </a>
             <nav>
@@ -20,7 +22,7 @@
             </nav>
         </header>
 
-        <!-- Menu -->
+        <!-- 側邊選單 -->
         <nav id="menu">
             <ul class="links">
                 <li><a href="index.html">首頁</a></li>
@@ -31,11 +33,12 @@
             </ul>
         </nav>
 
-        <!-- Main -->
+        <!-- 主要內容區塊 -->
         <div id="main">
             <section>
                 <div class="inner" style="text-align:center;">
                     <h1>Water Puzzle Game</h1>
+                    <!-- 難度選擇 -->
                     <label for="level-select" style="font-weight:bold;">選擇難度：</label>
                     <select id="level-select">
                         <option value="1">1級</option>
@@ -50,10 +53,13 @@
                         <option value="10">10級</option>
                     </select>
                     <br><br>
+                    <!-- 開始遊戲按鈕 -->
                     <div style="text-align:center;">
                         <button id="start-btn" class="button primary" style="margin-bottom: 20px;">開始遊戲</button>
                     </div>
+                    <!-- 遊戲區域 -->
                     <div id="game-container"></div>
+                    <!-- 遊戲訊息（如過關提示） -->
                     <div id="msg"></div>
                 </div>
             </section>
@@ -61,7 +67,7 @@
 
     </div>
 
-    <!-- Scripts -->
+    <!-- 主題與遊戲功能用 JavaScript -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
@@ -69,6 +75,5 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- 水排序遊戲主程式 -->
     <script src="assets/js/waterpuzzle2.js"></script>
-</body>
-</html>

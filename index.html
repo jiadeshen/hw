@@ -4,15 +4,17 @@
     <title>Javascript程式設計範例</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- 主樣式 -->
     <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- 無JS時的樣式 -->
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
 
-    <!-- Wrapper -->
+    <!-- 外層包裝 -->
     <div id="wrapper">
 
-        <!-- Header -->
+        <!-- 頁首（Logo與選單） -->
         <header id="header" class="alt">
             <a href="index.html" class="logo"><strong>首頁</strong> </a>
             <nav>
@@ -20,7 +22,7 @@
             </nav>
         </header>
 
-        <!-- Menu -->
+        <!-- 側邊選單 -->
         <nav id="menu">
             <ul class="links">
                 <li><a href="index.html">首頁</a></li>
@@ -31,87 +33,85 @@
             </ul>
         </nav>
 
-       <!-- ...existing code... -->
-<!-- Banner -->
-<section id="banner" class="major">
-    <div class="inner">
-        <header class="major">
-            <h1>113下學期五專三年級Javascript程式設計課程</h1>
-        </header>
-        <div class="content">
-            <p>請透過下列連結進入各個單元</p>
+        <!-- 橫幅區塊，顯示課程標題與說明 -->
+        <section id="banner" class="major">
+            <div class="inner">
+                <header class="major">
+                    <h1>113下學期五專三年級Javascript程式設計課程</h1>
+                </header>
+                <div class="content">
+                    <p>請透過下列連結進入各個單元</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 主要內容區塊 -->
+        <div id="main">
+
+            <!-- tiles 區塊，列出各單元入口 -->
+            <section id="one" class="tiles">
+                <!-- 首頁 -->
+                <article>
+                    <span class="image">
+                        <img src="images/home.jpg" alt="首頁" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="index.html" class="link">首頁</a></h3>
+                    </header>
+                </article>
+                <!-- 關於我 -->
+                <article>
+                    <span class="image">
+                        <img src="images/me.jpg" alt="關於我" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="about.html" class="link">關於我</a></h3>
+                    </header>
+                </article>
+                <!-- 心得 -->
+                <article>
+                    <span class="image">
+                        <img src="images/feel.jpg" alt="心得" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="feel.html" class="link">心得</a></h3>
+                    </header>
+                </article>
+                <!-- 乘法表 -->
+                <article>
+                    <span class="image">
+                        <img src="images/xx.jpg" alt="乘法表" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="xx.html" class="link">乘法表</a></h3>
+                    </header>
+                </article>
+                <!-- 遊戲 -->
+                <article>
+                    <span class="image">
+                        <img src="images/game.jpg" alt="遊戲" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="game2.html" class="link">遊戲</a></h3>
+                    </header>
+                </article>
+                <!-- 做作業（外部連結，另開新視窗） -->
+                <article>
+                    <span class="image">
+                        <img src="images/homework.jpg" alt="做作業" />
+                    </span>
+                    <header class="major">
+                        <h3><a href="https://jiadeshen.github.io/0508-1app/" class="link" target="_blank">做作業</a></h3>
+                    </header>
+                </article>
+            </section>
         </div>
-    </div>
-</section>
 
-<!-- Main -->
-<div id="main">
-
-    <!-- One -->
-    <section id="one" class="tiles">
-<article>
-    <span class="image">
-        <img src="images/home.jpg" alt="首頁" />
-    </span>
-    <header class="major">
-        <h3><a href="index.html" class="link">首頁</a></h3>
-    </header>
-</article>
-        <article>
-            <span class="image">
-                <img src="images/me.jpg" alt="關於我" />
-            </span>
-            <header class="major">
-                <h3><a href="about.html" class="link">關於我</a></h3>
-            </header>
-        </article>
-    <article>
-        <span class="image">
-            <img src="images/feel.jpg" alt="心得" />
-        </span>
-        <header class="major">
-            <h3><a href="feel.html" class="link">心得</a></h3>
-        </header>
-    </article>
-    <article>
-        <span class="image">
-            <img src="images/xx.jpg" alt="乘法表" />
-        </span>
-        <header class="major">
-            <h3><a href="xx.html" class="link">乘法表</a></h3>
-        </header>
-    </article>
-    <article>
-        <span class="image">
-            <img src="images/game.jpg" alt="遊戲" />
-        </span>
-        <header class="major">
-            <h3><a href="game2.html" class="link">遊戲</a></h3>
-        </header>
-    </article>
-    <!-- 新增「做作業」區塊，格式和遊戲一樣 -->
-    <article>
-        <span class="image">
-            <img src="images/homework.jpg" alt="做作業" />
-        </span>
-        <header class="major">
-            <h3><a href="https://jiadeshen.github.io/0508-1app/" class="link" target="_blank">做作業</a></h3>
-        </header>
-    </article>
-</section>
-    
-
-   
-<!-- ...existing code... -->
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
-</body>
-</html>
+        <!-- 主題功能用 JavaScript -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
